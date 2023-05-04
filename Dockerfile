@@ -1,19 +1,16 @@
 FROM python:3-alpine
 
-ENV DBNAME link_db
-ENV HOST localhost
+ENV DBNAME railway
+ENV HOST containers-us-west-123.railway.app
 ENV USER postgres
-ENV PASSWORD postgres
-ENV PORT 5432
+ENV PASSWORD WjxmdLfc4ExkKiEwIVvo
+ENV PORT 8006
 ENV PORT_EXEC 8000
 
 WORKDIR /app
 COPY . /app
 
-#RUN apk update && \
-#    apk add -y libpq-dev gcc
 
-#RUN pip install --upgrade pip
 RUN pip3 install --no-cache-dir -r /app/req.txt
 RUN apk add --no-cache alpine-conf && \
     setup-timezone -z Europe/Moscow

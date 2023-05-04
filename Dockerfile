@@ -4,8 +4,7 @@ ENV DBNAME railway
 ENV HOST containers-us-west-123.railway.app
 ENV USER postgres
 ENV PASSWORD WjxmdLfc4ExkKiEwIVvo
-ENV PORT 8006
-ENV PORT_EXEC 5000
+ENV DBPORT 8006
 
 WORKDIR /app
 COPY . /app

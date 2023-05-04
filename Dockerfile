@@ -1,7 +1,7 @@
 FROM python:3-alpine
 
 ENV DBNAME railway
-ENV HOST containers-us-west-123.railway.app
+ENV HOST https://containers-us-west-123.railway.app
 ENV USER postgres
 ENV PASSWORD WjxmdLfc4ExkKiEwIVvo
 ENV PORT 8006
